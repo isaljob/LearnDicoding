@@ -1,0 +1,71 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.teks {
+    font-size: 0vw;
+}
+.container {
+    background-color: aquamarine;
+    width: 100%;
+    min-height: 500px;
+}
+
+/* The navbar container */
+.navigasi {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navigasi li {
+    float: left;
+    display: block;
+    color: olivedrab    ;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+  
+.navigasi li:hover {
+    background-color: olivedrab;
+    color: white;
+}
+
+.header {
+    background-color: antiquewhite;
+    width: auto;
+    height: 40px;
+}
+
+.footer {
+    background-color: #ccc;
+    min-height: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.contents {
+    background-color: #ddd;
+    width: 100%;
+    min-height: 500px;
+    overflow: auto;
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.bagian-kiri {
+    width: 30%;
+    min-height: 250px;
+    background-color: blueviolet;
+    padding: 20px;
+    display: inline-block;
+}
+
+.bagian-kanan {
+    width: 70%;
+    min-height: 250px;
+    background-color: sandybrown;
+    padding: 20px;
+    display: inline-block;
+}
