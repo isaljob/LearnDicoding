@@ -1,71 +1,103 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
-.teks {
-    font-size: 0vw;
+body {
+    font-family : 'Montserrat', sans-serif;
+    font-size   : 15px;
+    background  : #84ac18;
 }
+
 .container {
-    background-color: aquamarine;
-    width: 100%;
-    min-height: 500px;
+    padding-top : 10px;
+    width       : 80%;
+    max-width   : 1080px;
+    margin-left : auto;
+    margin-right: auto;
+    min-height  : 650px;
 }
 
-/* The navbar container */
-.navigasi {
-    background-color: #333;
-    overflow: hidden;
-}
+/* Menu */
+    .menu {
+        background-color:#222324;
+        color           : white;
+        text-align      : center;
+        width           : auto;
+        min-height      : 50px;
+        overflow        : hidden;
+    }
 
-.navigasi li {
-    float: left;
-    display: block;
-    color: olivedrab    ;
-    text-align: center;
-    padding: 10px 10px 10px 10px;
-    text-decoration: none;
-}
-  
-.navigasi li:hover {
-    background-color: olivedrab;
-    color: white;
-}
+    .menu ul {
+        padding         : 0;
+        float           : left;
+        list-style-type : none;
+    }
+    .menu ul li {
+        display : inline-block;
+        position: relative;
+    }
+    .menu ul li a {
+        padding         : 10px 20px;
+        text-decoration : none;
+        color           : white;
+    } 
 
-.header {
-    background-color: antiquewhite;
-    width: auto;
-    height: 40px;
-}
+    li a:hover {
+        background-color: #84ac18;
+        color           : #222324;
+    }
+
+/* Konten */
+    .contents {
+        background-color:#06a9b4;
+        width           : 100%;
+        min-height      : 550px;
+    }
+
+    .konten-kiri {
+        background-color: #369b99;
+        padding: 0;
+        margin: 0;
+        float: left;
+        width: 30%;
+        min-height: 550px;
+        background-size: cover;
+    }
+
+    img {
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+
+    #nama {
+        text-align: center;
+    }
+
+    #deskripsi {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .konten-kanan {
+        /* background-color: #2e393a; */
+        padding: 0;
+        margin: 0;
+        float: right;
+        width: 70%;
+        min-height: 550px;
+        background-size: cover;
+    }
 
 .footer {
-    background-color: #ccc;
-    min-height: 30px;
-    padding: 10px;
+    background-color:#84ac18;
+    color: #222324;
     text-align: center;
-}
-
-.contents {
-    background-color: #ddd;
     width: 100%;
-    min-height: 500px;
-    overflow: auto;
-    display: table;
-    content: "";
-    clear: both;
-}
-
-.bagian-kiri {
-    width: 30%;
-    min-height: 250px;
-    background-color: blueviolet;
-    padding: 20px;
-    display: inline-block;
-}
-
-.bagian-kanan {
-    width: 70%;
-    min-height: 250px;
-    background-color: sandybrown;
-    padding: 20px;
-    display: inline-block;
+    height: 50px;
+    overflow: hidden;
 }
