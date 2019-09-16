@@ -1,3 +1,7 @@
+/******************
+Oleh Faishal Fawwaz
+*******************/
+
 * {
     box-sizing: border-box;
 }
@@ -90,6 +94,7 @@ body {
         float: right;
         width: 70%;
         min-height: 550px;
+        background-color: white;
         background-size: cover;
     }
 
@@ -100,4 +105,91 @@ body {
     width: 100%;
     height: 50px;
     overflow: hidden;
+}
+
+/******************************************
+	Media - Responsive
+*******************************************/
+/* untuk lebar max 800px */
+@media screen and (max-width:768px){
+    .container{
+        width	: 100%;
+    }
+
+    .menu ul li {
+        margin-top      : 10px;
+        margin-bottom   : 10px;
+    }
+    
+    .konten-kiri{
+        width	: 25%;
+        float   : left;
+    }
+    
+    .konten-kanan{
+        width	: 75%;
+        float	: right;
+        
+    }
+
+    img {
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        min-width: 100px;
+        min-height: 100px;
+        display: block;
+    }
+
+}
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 640px) {
+
+.header, 
+.footer{
+    text-align: center;
+}
+
+.contents {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: auto;
+}
+
+.konten-kiri {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    float: none;
+    min-height: 200px;
+    display: block;
+    position: relative;
+}
+
+.konten-kanan {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    float: none;
+    min-height: 300px;
+    display: block;
+    position: relative;
+}
+
+.gambar {
+    margin-top: 10%;
+    padding-top: 20%
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-radius: 50%;
+    min-width: 75px;
+    min-height: 75px;
+    display: block;
+}
+
 }
